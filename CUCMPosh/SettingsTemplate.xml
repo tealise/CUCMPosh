@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Settings>
+  <CUCM>
+    <uri></uri>
+    <version></version>
+    <auth></auth>
+    <ONCALL>
+      <ext></ext>
+      <full></full>
+      <pt></pt>
+      <fw_css></fw_css>
+    </ONCALL>
+  </CUCM>
+  <SHAREPOINT>
+    <schedule></schedule>
+    <cache></cache>
+    <auth></auth>
+  </SHAREPOINT>
+  <NOTIFY>
+    <SMTPServer></SMTPServer>
+    <SMTPPort></SMTPPort>
+    <authenticate></authenticate>
+    <auth></auth>
+    <fromName></fromName>
+    <fromAddress></fromAddress>
+    <subject></subject>
+  </NOTIFY>
+</Settings>
