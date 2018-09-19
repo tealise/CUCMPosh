@@ -1,13 +1,13 @@
-Function Set-OncallSettings {
-  <#
-  .SYNOPSIS
-    Update the settings file with on-call properties
+Function Add-OncallSettings {
+	<#
+	.SYNOPSIS
+		Update the settings file with on-call properties
 
-  .DESCRIPTION
-    Update the settings file with on-call properties. Runs through a Q&A to generate the file.
-  #>
+	.DESCRIPTION
+		Update the settings file with on-call properties. Runs through a Q&A to generate the file.
+	#>
 	[xml]$ConfigFile = Get-SettingsFile
-  $cucm_path = $MyInvocation.MyCommand.Module.PrivateData['cucm_path']
+	$cucm_path = $MyInvocation.MyCommand.Module.PrivateData['cucm_path']
 
 	# CUCM
 	$ConfigFile.Settings.CUCM.ONCALL.ext     = [string](Read-Host "Enter an extension for forward")

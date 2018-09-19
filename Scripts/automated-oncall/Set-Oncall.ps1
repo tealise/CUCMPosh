@@ -64,7 +64,7 @@ $parms = @{
   'destinationCSS' = $($ConfigFile.Settings.CUCM.ONCALL.fw_css)
 }
 
-Set-LineForward @parms
+Add-LineForward @parms
 
 Write-Host "Update Complete"
 

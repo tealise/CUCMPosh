@@ -43,14 +43,14 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 ## Authors
 
-* **Joshua Nasiatka** - *Initial work* - [Github](https://github.com/JoshuaNasiatka) | [Home](https://joshuanasiatka.com/)
+* **Joshua Nasiatka** - [Github](https://github.com/JoshuaNasiatka) | [Home](https://www.joshuanasiatka.com/)
 
 See also the list of [contributors](https://github.com/joshuanasiatka/CUCMPosh/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0.html) - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
 
-* Thanks to  [Tervis-Tumbler](https://github.com/Tervis-Tumbler/CUCMPowerShell) for inspiration and helping me understand CUCM SOAP requests.
+* Thanks to  [@Tervis-Tumbler](https://github.com/Tervis-Tumbler/CUCMPowerShell) for inspiration and helping me understand CUCM SOAP requests.

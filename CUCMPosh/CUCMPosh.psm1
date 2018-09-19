@@ -19,8 +19,5 @@ Foreach($import in @($Public + $Private)) {
     }
 }
 
-# Read in or create an initial config file and variable
-# $ConfigFile = Get-SettingsFile
-
 # Export public functions
 Export-ModuleMember -Function $Public.Basename

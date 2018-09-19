@@ -23,7 +23,7 @@ If you don't have a file library in SharePoint where you want the schedule to be
 ### Script Setup
 Determine a Windows server you want to use, normally a utility server of some kind.
 
-1. Create the directory `C:\AdminTools\CUCM\Oncall` and copy `Set-Oncall.ps1` and `user_list.csv` into that directory.
+1. Create the directory `C:\AdminTools\CUCM\Oncall` (can be a directory of your choosing but should be local to the server) and copy `Set-Oncall.ps1` and `user_list.csv` into that directory.
 2. Edit `user_list.csv` and fill out the contact list with the appropriate details for the people in the on-call rotation. Then Save.
     - COL A: Lastname, Firstname
     - COL B: Cell phone or whichever will be forwarded to in the format required for outbound dialing from CUCM
@@ -34,7 +34,7 @@ Determine a Windows server you want to use, normally a utility server of some ki
 ```ps1
 Import-Module CUCMPosh
 Get-SettingsFile # this will return an xml object if you already have a config or run through the setup if it doesn't find one.
-Add-OncallConfig # this will run through setup on configuring settings required for script.
+Add-OncallSettings # this will run through setup on configuring settings required for script.
 Copy-SettingsToSystem # this will copy new/updated config to SYSTEM profile
 ```
 

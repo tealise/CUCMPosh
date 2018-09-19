@@ -1,0 +1,7 @@
+### PowerShell ###
+logs/
+tests/
+*.zip
+*.idea.ps1
+*.cred
+Settings.xml
