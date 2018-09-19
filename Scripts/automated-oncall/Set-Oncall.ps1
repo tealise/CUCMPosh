@@ -1,19 +1,7 @@
-# #############################################################################
+###############################################################################
 # Cisco UCM - On Call Changer
 # NAME: Set-OnCall.ps1
-#
-# AUTHOR: Joshua Nasiatka
-# DATE:   2018/09/13
-# EMAIL:  dev@joshuanasiatka.com
-#
-# COMMENT:  This script will retrieve a list schedule from SharePoint and set
-#           a line forward to a specified number
-#
-# VERSION HISTORY
-# 1.0 2017.11.30 Initial Version.
-# 2.0 2018.09.13 Rewritten
-#
-# #############################################################################
+###############################################################################
 
 Import-Module PSExcel
 Import-Module CUCMPosh

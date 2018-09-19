@@ -7,6 +7,16 @@ This script compares today's date with that listed in a spreadsheet-based schedu
 *NOTE: Currently only supports lines and not hunt pilots, feel free to create a PR to implement that feature.*
 
 ## Recommended Usage
+
+### Prerequisites
+
+This script uses the [PSExcel](https://github.com/RamblingCookieMonster/PSExcel) module for parsing excel spreadsheets. If you have the [PowershellGet](https://docs.microsoft.com/en-us/powershell/module/powershellget/?view=powershell-5.0) [(Install)](https://github.com/PowerShell/PowerShellGet) module, you can run the following:
+
+``` powershell
+Install-Module PSExcel -Scope CurrentUser -Force # Current User
+Install-Module PSExcel -Force # All Users, Requires RunAs Admin
+```
+
 ### SharePoint Setup
 If you don't have a file library in SharePoint where you want the schedule to be stored, create that first. Create an Excel Workbook that contains two columns, date and name, in the format `dd-MMM-yy` and `Lastname, Firstname` and save it.
 

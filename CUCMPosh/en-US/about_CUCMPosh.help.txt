@@ -1,0 +1,14 @@
+TOPIC
+  CUCMPosh Module
+
+SHORT DESCRIPTION
+  A PowerShell module and scripts to facilitate AXL SOAP requests to Cisco Unified Communications Manager
+
+LONG DESCRIPTION
+  A PowerShell module and scripts to facilitate AXL SOAP requests to Cisco Unified Communications Manager
+
+  You can find additional documentation here:
+    https://github.com/joshuanasiatka/CUCMPosh/wiki
+
+DETAILED DESCRIPTION
+  Will fill in later. For now see the README.md file at https://github.com/joshuanasiatka/CUCMPosh
