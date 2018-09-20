@@ -32,9 +32,7 @@ Function Invoke-CUCMAPIRequest {
 	}
 
 	try {
-	    $result = Invoke-WebRequest @parms
-		Write-Host "Completed with status: $(($result).StatusDescription)"
-		return $result
+	    return Invoke-WebRequest @parms
     } catch {
 	    $result = $_.Exception.Response.GetResponseStream()
 	    $reader = New-Object System.IO.StreamReader($result)

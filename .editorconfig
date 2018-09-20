@@ -9,6 +9,6 @@ insert_final_newline = false
 # Set default charset
 [*.{psm1,ps1,cs,cshtml}]
 charset = utf-8
-indent_style = tab
+indent_style = space
 indent_size = 4
 trim_trailing_whitespace = true
