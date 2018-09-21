@@ -6,7 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
-- Added `Get-Line` function, lookup by DN/Pattern or description
+- Added `Get-DN` function, list directory numbers, filter by DN, Description, and availability.
+- Added `Get-Line` function, lookup by DN/Pattern or description.
 - Added `Get-Phone` function, lookup by name with optional `-Basic` filter switch parameter.
 - Added private `Invoke-CUCMSQLQuery` function
 
@@ -27,4 +28,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Same directory precedence, use `settings.xml` or `*.cred` in same directory if exists.
 - Added `Remove-LineForward` function to toggle Voicemail forward or remove entire ForwardAll setting.
 
-[Unreleased]: https://github.com/joshuanasiatka/CUCMPosh/compare/latest...HEAD
+[Unreleased]: https://github.com/joshuanasiatka/CUCMPosh/compare/v0.0.1...master

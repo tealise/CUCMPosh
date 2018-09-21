@@ -24,7 +24,8 @@ Function Get-Line {
 	#>
 	param(
 		[Parameter(ValueFromPipelineByPropertyName)][String]$DNorPattern,
-		[Parameter(ValueFromPipelineByPropertyName)][String]$Description
+		[Parameter(ValueFromPipelineByPropertyName)][String]$Description,
+        [Parameter(ValueFromPipelineByPropertyName)][String]$routePartition
 	)
 
 	$ConfigFile = Get-SettingsFile
@@ -36,7 +37,10 @@ Function Get-Line {
 	INNER JOIN devicenumplanmap as dmap on dmap.fkdevice=d.pkid
 	INNER JOIN numplan as n on dmap.fknumplan=n.pkid
 	INNER JOIN routepartition as rp on n.fkroutepartition=rp.pkid
-	WHERE d.tkclass=1 $(if($DNorPattern){"AND n.dnorpattern = '$DNorPattern'"}) $(if($Description){"AND d.description LIKE '%$Description%'"})
+	WHERE d.tkclass=1
+        $(if($DNorPattern){"AND n.dnorpattern LIKE '%$DNorPattern%'"})
+        $(if($Description){"AND d.description LIKE '%$Description%'"})
+        $(if($routePartition){"AND rp.name LIKE '%$routePartition%'"})
 	ORDER BY d.name
 "@
 
